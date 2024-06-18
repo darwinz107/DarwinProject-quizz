@@ -100,11 +100,12 @@ let ValorEntrada = document.getElementById('NumAdivinar');
 let mensaje = document.getElementById('mensaje');
 let imagen = document.getElementById('imagen');
 let intento = document.getElementById('intento');
+let intentos = 0;
 
 console.log(numAzar);
 function AsignarNum() {
-intento++;
-intento.textContent=intento; 
+intentos ++;
+intento.textContent=intentos; 
 valorIngresado = parseInt(ValorEntrada.value);
 
 if(valorIngresado <1 || valorIngresado >100 || isNaN(valorIngresado)){
