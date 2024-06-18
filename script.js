@@ -99,9 +99,12 @@ let ValorEntrada = document.getElementById('NumAdivinar');
 
 let mensaje = document.getElementById('mensaje');
 let imagen = document.getElementById('imagen');
+let intento = document.getElementById('intento');
+
 console.log(numAzar);
 function AsignarNum() {
- 
+intento++;
+intento.textContent=intento; 
 valorIngresado = parseInt(ValorEntrada.value);
 
 if(valorIngresado <1 || valorIngresado >100 || isNaN(valorIngresado)){
